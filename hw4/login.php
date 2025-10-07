@@ -24,7 +24,7 @@ if (isset($_POST['register'])) {
         if (mysqli_query($link, $query)) {
             echo " Registration successful! You can now log in.";
         } else {
-            echo "❌ Error: " . mysqli_error($link);
+            echo " Error: " . mysqli_error($link);
         }
     }
 }
